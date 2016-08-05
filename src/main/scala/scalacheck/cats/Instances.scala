@@ -9,3 +9,5 @@ trait Instances {
     def flatMap[A, B](fa: Gen[A])(f: A => Gen[B]): Gen[B] = fa flatMap f
   }
 }
+
+object Instances extends Instances
