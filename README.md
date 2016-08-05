@@ -1,2 +1,13 @@
 # scalacheck-cats
-Typeclass instances for ScalaCheck
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.amrhassan/scalacheck-cats_2.11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.amrhassan/scalacheck-cats_2.11)
+
+
+[Cats](http://typelevel.org/cats) typeclass instances for ScalaCheck data types
+
+# Usage #
+```sbt
+libraryDependencies += "io.github.amrhassan" %% "scalacheck-cats" % "0.1.0" % Test
+```
+```scala
+import scalacheck.cats._
+```
