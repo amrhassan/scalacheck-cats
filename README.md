@@ -7,7 +7,7 @@
 
 # Usage #
 ```sbt
-libraryDependencies += "io.github.amrhassan" %% "scalacheck-cats" % "0.1.0" % Test
+libraryDependencies += "io.github.amrhassan" %% "scalacheck-cats" % "0.1.1" % Test
 ```
 ```scala
 import scalacheck.cats._
