@@ -5,7 +5,7 @@ scalaVersion := "2.11.8"
 crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.0-M5")
 
 libraryDependencies ++= Seq(
-  "org.typelevel" %% "cats-core" % "0.6.1",
+  "org.typelevel" %% "cats-core" % "0.7.0",
   "org.scalacheck" %% "scalacheck" % "1.13.2"
 )
 
