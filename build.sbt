@@ -1,11 +1,11 @@
 name := "scalacheck-cats"
-version := "0.1-SNAPSHOT"
+version := "0.2.0-SNAPSHOT"
 organization := "io.github.amrhassan"
 scalaVersion := "2.11.8"
 crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.0-M5")
 
 libraryDependencies ++= Seq(
-  "org.typelevel" %% "cats-core" % "0.7.0",
+  "org.typelevel" %% "cats-core" % "0.7.2",
   "org.scalacheck" %% "scalacheck" % "1.13.2"
 )
 
