@@ -1,5 +1,5 @@
 name := "scalacheck-cats"
-version := "0.2.0-SNAPSHOT"
+version := "0.2.0"
 organization := "io.github.amrhassan"
 scalaVersion := "2.12.0"
 crossScalaVersions := Seq("2.10.6", "2.11.8")
