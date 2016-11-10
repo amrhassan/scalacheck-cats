@@ -3,6 +3,7 @@ organization := "io.github.amrhassan"
 scalaVersion := "2.12.0"
 crossScalaVersions := Seq("2.11.8", "2.12.0")
 releasePublishArtifactsAction := PgpKeys.publishSigned.value
+releaseCrossBuild := true
 
 libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-core" % "0.8.1",
