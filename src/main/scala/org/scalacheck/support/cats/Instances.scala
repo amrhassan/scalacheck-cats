@@ -1,4 +1,4 @@
-package scalacheck.cats
+package org.scalacheck.support.cats
 
 import cats.Monad
 import org.scalacheck.Gen

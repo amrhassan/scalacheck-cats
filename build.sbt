@@ -1,10 +1,10 @@
 name := "scalacheck-cats"
 organization := "io.github.amrhassan"
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.0"
 crossScalaVersions := Seq("2.11.8", "2.12.0")
 
 libraryDependencies ++= Seq(
-  "org.typelevel" %% "cats-core" % "0.8.0",
+  "org.typelevel" %% "cats-core" % "0.8.1",
   "org.scalacheck" %% "scalacheck" % "1.13.4"
 )
 
