@@ -10,5 +10,5 @@
 libraryDependencies += "io.github.amrhassan" %% "scalacheck-cats" % "0.3.0" % Test
 ```
 ```scala
-import scalacheck.cats._
+import org.scalacheck.support.cats._
 ```
