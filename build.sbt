@@ -6,7 +6,7 @@ releasePublishArtifactsAction := PgpKeys.publishSigned.value
 releaseCrossBuild := true
 
 libraryDependencies ++= Seq(
-  "org.typelevel" %% "cats-core" % "0.9.0",
+  "org.typelevel" %% "cats-core" % "1.0.0-RC1",
   "org.scalacheck" %% "scalacheck" % "1.13.4"
 )
 
