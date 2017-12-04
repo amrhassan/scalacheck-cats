@@ -1,6 +1,6 @@
 name := "scalacheck-cats"
 organization := "io.github.amrhassan"
-scalaVersion := "2.12.1"
+scalaVersion := "2.12.4"
 crossScalaVersions := Seq("2.10.6", "2.11.8", scalaVersion.value)
 releasePublishArtifactsAction := PgpKeys.publishSigned.value
 releaseCrossBuild := true
@@ -10,24 +10,21 @@ libraryDependencies ++= Seq(
   "org.scalacheck" %% "scalacheck" % "1.13.4"
 )
 
-pomExtra in Global := {
-  <url>https://github.com/amrhassan/scalacheck-cats</url>
-    <licenses>
-      <license>
-        <name>MIT</name>
-        <url>https://opensource.org/licenses/MIT</url>
-      </license>
-    </licenses>
-    <scm>
-      <connection>scm:git:github.com/amrhassan/scalacheck-cats</connection>
-      <developerConnection>scm:git:git@github.com:amrhassan/scalacheck-cats</developerConnection>
-      <url>github.com/amrhassan/scalacheck-cats</url>
-    </scm>
-    <developers>
-      <developer>
-        <id>amrhassan</id>
-        <name>Amr Hassan</name>
-        <url>http://amrhassan.info</url>
-      </developer>
-    </developers>
-}
+publishTo := Some(
+  if (isSnapshot.value)
+    Opts.resolver.sonatypeSnapshots
+  else
+    Opts.resolver.sonatypeStaging
+)
+
+licenses := Seq("MIT" -> url("http://www.opensource.org/licenses/mit-license.php"))
+homepage := Some(url("https://amrhassan.github.io/scalacheck-cats"))
+scmInfo := Some(
+  ScmInfo(
+    url("https://github.com/amrhassan/scalacheck-cats"),
+    "scm:git@github.com:amrhassan/scalacheck-cats.git"
+  )
+)
+developers := List(
+  Developer(id="amrhassan", name="Amr Hassan", email="amr.hassan@gmail.com", url=url("http://amrhassan.info"))
+)
