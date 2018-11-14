@@ -1,7 +1,7 @@
 name := "scalacheck-cats"
 organization := "io.github.amrhassan"
 scalaVersion := "2.12.7"
-crossScalaVersions := Seq("2.10.7", "2.11.12", scalaVersion.value)
+crossScalaVersions := Seq("2.11.12", scalaVersion.value)
 releasePublishArtifactsAction := PgpKeys.publishSigned.value
 releaseCrossBuild := true
 
